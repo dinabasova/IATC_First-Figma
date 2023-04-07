@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+._container {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.first_section {
+    background: #1C1E53;
+}
+
+.main_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_btn {
+    border-radius: 41px;
+    border: 2px solid #F4F6FC33;
+    margin-left: 20px;
+    padding: 16px 48px;
+}
+
+.menu_link {
+    position: relative;
+    padding: 30px 15px;
+    font-size: 18px;
+}
+
+.menu_link:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 15px;
+    transition: 0.6s;
+}
+
+.menu_link:hover {
+    color: #ffffff;
+}
+
+.menu_link:hover:after {
+    width: 100%;
+}
+
+.main_center {
+    display: flex;
+    padding: 100px 0;
+}
+
+.main_left {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_left > h1 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+}
+
+.main_left > p {
+    margin: 30px 0;
+    line-height: 28px;
+}
+
+/* ??????? */
+
+.container_btn {
+    display: flex;
+    gap: 40px;  
+}
+
+.custom_btn_1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1B1C2B;
+    background: #FCD980;
+    padding: 16px 56px;
+    border-radius: 41px;
+}
+
+.custom_btn_2 {
+    color: #ffffff;
+    background: transparent;
+}
+
+.custom_btn_2:after {
+    content: "→";
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+
+.main_greetings > img {
+    min-width: 50%;
+}
+
+.second_section {
+    background: #F4F6FC;
+}
+
+.second_section ._container {
+    display: flex;
+    padding: 130px 0;
+}
+
+.work_text {
+    min-width: 50%;
+}
+
+.work_text h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #282938;;
+}
+
+.work_text p {
+    margin: 16px 0;
+    font-weight: 400;
+    line-height: 28px;
+    color: #282938;
+}
+
+.group_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    min-width: 50%;
+}
+
+.custom_btn_3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2405F2;
+    background: transparent;
+}
+
+.custom_btn_3:after {
+    content: "→";
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+
+.group_card h4 {
+    font-size: 32px;
+    color: #282938;
+    padding: 10px 0;
+}
+
+.group_card p {
+    font-weight: 400;
+    color: #282938;
+    line-height: 28px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/*Project header*/
+.third_section {
+    padding: 130px 0;
+}
+
+.project_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.project_header h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #282938;
+}
+
+.project_header button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #282938;
+    background: transparent;
+}
+
+.project_header button:after {
+    content: "→";
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+
+.card {
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(rgba(28, 30, 83, 0.42) 0%, #1C1E53 100%);
+    transition: ease 2s;
+    padding: 15px;
+}
+
+.card-body h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.card-body p {
+    padding: 16px 0 40px 0;
+    line-height: 28px;
+    opacity: 80%;
+}
+
+
+.card:hover .card-body {
+    left: 0;
+}
+
+.subtitle .title {
+    margin: 5px;
+    align-items: center;
+}
